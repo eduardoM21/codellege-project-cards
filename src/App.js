@@ -113,8 +113,8 @@ function App() {
       <Walppeper title=" Liga MX BBVA " />
 
       <div className="container">
-        {equipos.map((tarjeta) => {
-          return <Tarjeta key={tarjeta.title} {...tarjeta} />;
+        {equipos.map((tarjeta, indice) => {
+          return <Tarjeta key={equipos.tarjeta + indice} {...tarjeta} />;
         })}
       </div>
     </div>
